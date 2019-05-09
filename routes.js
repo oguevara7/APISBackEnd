@@ -8,6 +8,7 @@ router.all('*', cors())
 
 router.post('/products', products.createProduct)
 router.get('/products', products.getProducts)
+router.patch('/products/:id', products.updateProduct)
 router.delete('/products/:id', products.deleteProduct)
 
 router.get('*', function(req, res) {
